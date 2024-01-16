@@ -55,7 +55,7 @@ body {
   flex-direction: column;
 }
 
-header, .hero, footer {
+header, section:first-child, footer {
   background-color: var(--primary);
 }
 
@@ -77,11 +77,21 @@ footer {
 }
 
 section {
-    padding: 10vh;
+    padding: 5vh 8vw;
 }
 
 header, footer {
-    padding: 32px 10vh;
+    padding: 24px 8vw;
+}
+
+@media (min-width: 700px) {
+    header, footer {
+        padding: 32px 10vw;
+    }
+
+    section {
+        padding: 8vh 10vw;
+    }
 }
 
 .inner-column {
@@ -89,7 +99,7 @@ header, footer {
   margin: 0 auto;
 }
 
-.testimonial {
+section:nth-child(3) {
     background-color: var(--secondary);
 }
 
@@ -107,6 +117,12 @@ h1 {
 nav a {
     font-weight: 700;
     font-size: 1.3rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
 }
 
 footer p, .card-caption {
@@ -139,7 +155,7 @@ footer p, .card-caption {
 }
 
 .call-to-action-module .button {
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
   flex-shrink: 0;
 }
 
@@ -154,6 +170,25 @@ footer p, .card-caption {
 
 .hero-module p {
     color: var(--copy-light-lower-contrast);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6%;
+}
+
+.product-card {
+    flex-basis: 47%;
+    color: var(--primary);
+    text-align: center;
+}
+
+.product-card img {
+    border: 4px solid var(--accent);
+    border-radius: 18px;
+    margin: 36px 0 18px;
 }
 
 .call-to-action-module {
@@ -194,6 +229,15 @@ footer p, .card-caption {
     justify-content: space-between;
   }
 
+  .product-grid {
+    flex-wrap: nowrap;
+    padding: 0 8%;
+  }
+
+  .testimonial-module {
+    padding: 0 8%;
+  }
+
   .call-to-action-module {
     display: flex;
     justify-content: space-between;
@@ -207,7 +251,6 @@ footer p, .card-caption {
 }
 
 .testimonial-module {
-    padding: 0 10vw;
     color: var(--copy-dark)
 }
 
