@@ -124,17 +124,23 @@ footer p, .card-caption {
     text-align: right;
 }
 
+.call-to-action-copy h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
 /* COMPONENTS */
 .button {
   background-color: var(--accent);
   color: var(--copy-light);
   border-radius: 8px;
-  /* display: inline-block; */
+  display: inline-block;
   padding: 10px 35px;
 }
 
-.call-to-action .button {
+.call-to-action-module .button {
   border: 1px solid var(--secondary);
+  flex-shrink: 0;
 }
 
 /* MODULES */
@@ -148,6 +154,25 @@ footer p, .card-caption {
 
 .hero-module p {
     color: var(--copy-light-lower-contrast);
+}
+
+.call-to-action-module {
+    background-color: var(--accent);
+    border-radius: 10px;
+    padding: 48px 12%;
+}
+
+.call-to-action-copy h3 {
+    color: var(--copy-light);
+    margin-bottom: 8px;
+}
+
+.call-to-action-copy p {
+    color: var(--copy-light-lower-contrast);
+}
+
+.call-to-action-copy {
+    margin-bottom: 24px;
 }
 
 @media (min-width: 700px) {
@@ -168,10 +193,21 @@ footer p, .card-caption {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .call-to-action-module {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .call-to-action-copy {
+    margin-bottom: 0;
+  }
 }
 
 .testimonial-module {
-    padding: 0 5vw;
+    padding: 0 10vw;
     color: var(--copy-dark)
 }
 
