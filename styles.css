@@ -1,22 +1,4 @@
 @import "./reset.css";
-
-/* DEV SETUP */
-/* .inner-column {
-  border: 5px solid limegreen;
-}
-
-section {
-    border: 5px solid orange;
-}
-
-header, main, footer {
-    border: 5px solid yellow;
-}
-
-.hero-content {
-    border: 5px solid white;
-} */
-
 /* SETUP */
 html {
   box-sizing: border-box;
