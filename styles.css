@@ -82,7 +82,7 @@ footer {
 }
 
 section {
-    padding: 6vh 8vw;
+    padding: 8vh 8vw;
 }
 
 header, footer {
@@ -95,7 +95,7 @@ header, footer {
     }
 
     section {
-        padding: 8vh 10vw;
+        padding: 10vh 10vw;
     }
 }
 
